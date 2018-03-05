@@ -1,7 +1,19 @@
-header {
-  background-color: white;
-  position: fixed;
-  width: 100%;
+/*TAGS*/
+
+a {
+  color: #373b47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e95853;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  font-family: "Raleway", sans-serif;
 }
 
 footer {
@@ -9,6 +21,40 @@ footer {
   color: white;
   text-align: center;
   font-size: 20px;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+header > .menu-list-container {
+  margin-top: 20px;
+}
+
+header > div > .menu-item {
+  margin: 20px 40px;
+  font-weight: 700;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*ID´S*/
+
+#proyectos {
+  text-align: center;
+}
+
+#proyectos > div {
+  display: inline-block;
+  margin: 0 80px;
+}
+
+#proyectos > div > img {
+  width: 200px;
 }
 
 #seccion-1 {
@@ -65,31 +111,10 @@ footer {
   width: 80%;
 }
 
-#proyectos {
-  text-align: center;
-}
-
-#proyectos > div {
-  display: inline-block;
-  margin: 0 80px;
-}
-
-#proyectos > div > img{
-  width: 200px;
-}
-
-
-header > .menu-list-container {
-  margin-top: 20px;
-}
+/*CLASES*/
 
 .clear {
   clear: both;
-}
-
-header > div > .menu-item {
-  margin: 20px 40px;
-  font-weight: 700;
 }
 
 /*CLASES REUTILIZABLES*/
@@ -106,17 +131,6 @@ header > div > .menu-item {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
-  font-family: "Raleway", sans-serif;
-}
-
-img {
-  vertical-align: middle;
-}
-
 .container {
   width: 1200px;
   margin-right: auto;
@@ -131,15 +145,22 @@ img {
   display: table;
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .container:after {
   clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
 }
 
 .mb-0 {
@@ -152,29 +173,6 @@ img {
 
 .m-0 {
   margin: 0px;
-}
-
-a {
-  color: #373b47;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e95853;
-}
-
-.logo {
-  width: 50px;
-  margin-right: 50px;
-  margin-top: 15px;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
 }
 
 .text-uppercase {
